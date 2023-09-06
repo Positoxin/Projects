@@ -3,23 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First HTML</title>
+    <title>Signup Form</title>
 </head>
 <body>
-    <h1>Cities I lived in</h1>
-   <ul>
-  <li>Mayport</li>
-  <li>San Diego</li>
-  <li>Phoenix</li>
-  <li>Virginia Beach</li>
-  <li>Dahlgren</li>
-  <li>Great Lakes</li>
-  <li>Clementon</li>
-</ul>
-<ol>
-    <li>Tokyo</li>
-    <li>Edinburgh</li>
-    <li>Venice</li>
-</ol>
+    <form>
+        <label for="E-mail">E-Mail</label>
+        <input type="email" name="E-mail" placeholder="example@gmail.com"><br><br>
+
+        <label for="password">Password</label>
+        <input type="password" name="password" placeholder="type password here"><br><br>
+
+        <label for="Username">Github Username</label>
+        <input type="Username" name="Username" placeholder="Type Github Username" required><br><br>
+
+        <fieldset>
+            <legend>Which version are you using?</legend>
+        <input id="version-Enterprise" type="radio" name="version" value="Enterprise">
+        <label for="version-Enterprise">Enterprise</label><br>
+        <input id="version-Pro" type="radio" name="version" value="Pro">
+        <label for="version-Pro">Pro</label><br>
+        <input id="version-Free" type="radio" name="version" value="Free">
+        <label for="version-Free">Free</label><br>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Remember me</legend>
+            <input id="Remember Me" type="checkbox" name="Remember" value="Remember Me">
+            <label for="Remember Me">Remember Me</label><br>
+        </fieldset>
+
+    </form>
+    
 </body>
 </html>
